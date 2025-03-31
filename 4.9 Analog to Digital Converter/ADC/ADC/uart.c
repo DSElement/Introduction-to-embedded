@@ -9,10 +9,8 @@ void uart_init(void) {
 	UCSRC &= ~(1 << URSEL); //permite accesu in UBRRH
 	UBRRH = (uint8_t)(MYUBRR>>8);
 	UBRRL = (uint8_t)MYUBRR;
-	//UCSRA &= ~(1 << U2X) & ~(1 << MPCM); //Set flags on 0
 	UCSRB = (1<<RXEN) | (1<<TXEN) | (1 << RXCIE); // Activare RX și TX si rx interrupt
 	UCSRC = (1<<URSEL) | (1<<UCSZ1) | (1<<UCSZ0); // 8-bit, 1 stop, fără paritate
-	//UCSRC &= ~(1 << UCSZ2);
 	//sei();
 }
 

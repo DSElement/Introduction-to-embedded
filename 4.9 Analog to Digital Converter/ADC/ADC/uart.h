@@ -9,8 +9,8 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 
-volatile uint8_t uart_received_flag;
-volatile uint8_t uart_received_byte;
+//volatile uint8_t uart_received_flag;
+//volatile uint8_t uart_received_byte;
 //ISR(USART_RXC_vect);
 
 void uart_init(void);
