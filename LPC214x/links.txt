@@ -1,0 +1,7 @@
+https://www.olimex.com/Products/ARM/NXP/LPC-H2148/
+
+https://www.olimex.com/Products/ARM/NXP/LPC-H2148/resources/LPC-H2148-sch.gif
+
+https://www.nxp.com/docs/en/user-guide/UM10139.pdf
+
+https://www.nxp.com/docs/en/data-sheet/LPC2141_42_44_46_48.pdf
