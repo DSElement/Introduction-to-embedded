@@ -22,19 +22,17 @@ void ser_int()
   U0LCR=0X03;
 }
 
-/*void ser_int()
-{
-  PINSEL0=0X5;
-  U0LCR=0X83;
-  U0DLL=0x4F;
-  U0DLM=0;
-  U0LCR=0X03;
-}*/
-
 void tx(unsigned char c)
 {
   while((U0LSR&(1<<5))==0);
   U0THR=c;
+}
+
+void send_string(const char *s)
+{
+  while (*s) {
+    tx(*s++);
+  }
 }
 
 char rx()
@@ -46,8 +44,8 @@ char rx()
 int main(void)
 {
   unsigned char b;
-  //pll();
   ser_int();
+  send_string("UART Ready!\r\n");  // Send greeting at startup
   while(1) {
     b = rx();
 		tx(b);
