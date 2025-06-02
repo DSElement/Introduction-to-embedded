@@ -17,8 +17,8 @@ void ser_int()
 {
   PINSEL0=0X5;
   U0LCR=0X83;
-  U0DLL=135;
-  U0DLM=1;
+  U0DLL=98;
+  U0DLM=0;
   U0LCR=0X03;
 }
 
