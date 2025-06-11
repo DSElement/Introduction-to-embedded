@@ -1,0 +1,3 @@
+/home/dspproject/work/prickpi/basic-clion-project/cmake-build-debug/CMakeFiles/LPC2294.elf.dir
+/home/dspproject/work/prickpi/basic-clion-project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dspproject/work/prickpi/basic-clion-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
