@@ -2,6 +2,7 @@
 #include "lpc214x.h"
 #include <stdio.h>
 #include <stdint.h>
+#include <spi.h>
 void my_delay();
 
 void timer_init()
@@ -69,6 +70,16 @@ int main(void)
 	LOG_init();
 	//init_interrupt();
 	init_interrupt_fiq();
+
+	spi_init();
+
+	uint8_t tx[4] = {1, 21, 0x04, 100}; // Example: set motor power on PORT_C to +100
+	uint8_t rx[4];
+
+	spi_start();
+	spi_transfer_bytes(tx, rx, 4);
+	spi_stop();
+
 	while (1);
 	while(1)
 	{
