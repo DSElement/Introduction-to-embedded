@@ -1,0 +1,187 @@
+T520E6740 000:028.070   SEGGER J-Link V8.10h Log File
+T520E6740 000:028.151   DLL Compiled: Nov 20 2024 12:20:16
+T520E6740 000:028.153   Logging started @ 2025-06-19 11:52
+T520E6740 000:028.155   Process: /opt/SEGGER/JLink_V810h/JLinkExe
+T520E6740 000:028.157 - 28.157ms 
+T520E6740 000:028.172 JLINK_TIF_GetAvailable(...)
+T520E6740 000:030.693 - 2.521ms 
+T520E6740 000:030.728 JLINK_ConfigJTAG(IRPre = -1, DRPre = -1)
+T520E6740 000:030.731 - 0.006ms 
+T520E6740 000:030.739 JLINK_DEVICE_GetIndex(sDeviceName = lpc2294)
+T520E6740 000:043.638 - 12.899ms returns 5206
+T520E6740 000:043.655 JLINK_ExecCommand("device=lpc2294", ...). 
+T520E6740 000:045.036   Add. flash bank: Turbo mode enabled, but no RAMCode available. 
+T520E6740 000:045.161   Device "LPC2294" selected.
+T520E6740 000:046.514 - 2.857ms returns 0x00
+T520E6740 000:046.520 JLINK_EnableLog(...)
+T520E6740 000:046.522 - 0.002ms 
+T520E6740 000:046.528 JLINK_GetEmuCaps()
+T520E6740 000:046.531 - 0.002ms returns 0xB9FF7BBF
+T520E6740 000:046.533 JLINK_TIF_GetAvailable(...)
+T520E6740 000:046.660 - 0.127ms 
+T520E6740 000:046.663 JLINK_TIF_Select(JLINKARM_TIF_JTAG)
+T520E6740 000:047.735 - 1.072ms returns 0x00
+T520E6740 000:047.740 JLINK_IsConnected()
+T520E6740 000:047.742 - 0.002ms returns FALSE
+T520E6740 000:047.744 JLINK_SetSpeed(2000)
+T520E6740 000:047.883 - 0.139ms 
+T520E6740 000:047.886 JLINK_Connect()
+T520E6740 000:049.047   TotalIRLen = 4, IRPrint = 0x01
+T520E6740 000:049.423   JTAG chain detection found 1 devices:
+T520E6740 000:049.443    #0 Id: 0x4F1F0F0F, IRLen: 04, ARM7TDMI-S Core
+T520E6740 000:049.885   -- Max. mem block: 0x00004598
+T520E6740 000:049.928 - 2.042ms returns 0x00
+T520E6740 000:049.931 JLINK_GetIdData(pIdData)
+T520E6740 000:050.921   pIdData->ScanLen=4
+T520E6740 000:050.923   pIdData->NumDevices=1
+T520E6740 000:050.926   pIdData->aId[0]=0x4F1F0F0F
+T520E6740 000:050.927   pIdData->aIrRead[0]=0
+T520E6740 000:050.929   pIdData->aScanLen[0]=4
+T520E6740 000:050.931   pIdData->aScanRead[0]=0
+T520E6740 000:050.933 - 1.003ms 
+T520E6740 000:050.936 JLINK_GetMemZones(...)
+T520E6740 000:050.938 - 0.001ms returns 1
+T520E6740 000:050.943 JLINK_HasError()
+T520E6740 000:050.945 JLINK_CORE_GetFound()
+T520E6740 000:050.947 - 0.002ms returns 0x7FFFFFF
+T520E6740 000:050.952 JLINK_ETM_IsPresent()
+T520E6740 000:053.314 - 2.361ms returns 18:TRUE
+T520E6740 000:053.327 JLINK_ETM_IsPresent()
+T520E6740 000:053.334 - 0.007ms returns 18:TRUE
+T520E6740 000:053.346 JLINK_ETM_ReadReg(RegIndex = 0x01)
+T520E6740 000:053.347    -- Skipped
+T520E6740 000:053.349 - 0.004ms returns 0x20842401
+T520E6740 000:053.376 JLINK_ETB_IsPresent()
+T520E6740 000:053.378 - 0.002ms returns 0:FALSE
+T520E6740 000:053.381 JLINK_SetResetType(JLINKARM_RESET_TYPE_HALT_WP)
+T520E6740 000:053.383 - 0.001ms returns JLINKARM_RESET_TYPE_LPC
+T520E6740 000:053.384 JLINK_GetResetTypeDesc
+T520E6740 000:053.386 - 0.002ms 
+T520E6740 000:053.394 JLINK_ConfigJTAG(IRPre = -1, DRPre = -1)
+T520E6740 000:053.395 - 0.001ms 
+T520E6740 000:053.398 JLINK_DEVICE_GetIndex(sDeviceName = lpc2294)
+T520E6740 000:053.436 - 0.039ms returns 5206
+T520E6740 000:053.439 JLINK_ExecCommand("device=lpc2294", ...). 
+T520E6740 000:053.512   Add. flash bank: Turbo mode enabled, but no RAMCode available. 
+T520E6740 000:053.535   Device "LPC2294" selected.
+T520E6740 000:053.572 - 0.132ms returns 0x00
+T520E6740 000:053.574 JLINK_EnableLog(...)
+T520E6740 000:053.575 - 0.001ms 
+T520E6740 000:053.579 JLINK_GetEmuCaps()
+T520E6740 000:053.581 - 0.001ms returns 0xB9FF7BBF
+T520E6740 000:053.582 JLINK_TIF_GetAvailable(...)
+T520E6740 000:053.684 - 0.102ms 
+T520E6740 000:053.686 JLINK_TIF_Select(JLINKARM_TIF_JTAG)
+T520E6740 000:053.687 - 0.001ms returns 0x00
+T520E6740 000:053.691 JLINK_IsConnected()
+T520E6740 000:053.692 - 0.002ms returns TRUE
+T520E6740 000:053.694 JLINK_SetSpeed(2000)
+T520E6740 000:053.870 - 0.176ms 
+T520E6740 000:053.873 JLINK_Connect()
+T520E6740 000:055.310   TotalIRLen = 4, IRPrint = 0x01
+T520E6740 000:055.934   JTAG chain detection found 1 devices:
+T520E6740 000:055.938    #0 Id: 0x4F1F0F0F, IRLen: 04, ARM7TDMI-S Core
+T520E6740 000:056.491   -- Max. mem block: 0x00004598
+T520E6740 000:056.498 - 2.625ms returns 0x00
+T520E6740 000:056.501 JLINK_GetIdData(pIdData)
+T520E6740 000:058.061   pIdData->ScanLen=4
+T520E6740 000:058.072   pIdData->NumDevices=1
+T520E6740 000:058.074   pIdData->aId[0]=0x4F1F0F0F
+T520E6740 000:058.076   pIdData->aIrRead[0]=0
+T520E6740 000:058.078   pIdData->aScanLen[0]=4
+T520E6740 000:058.080   pIdData->aScanRead[0]=0
+T520E6740 000:058.082 - 1.582ms 
+T520E6740 000:058.085 JLINK_GetMemZones(...)
+T520E6740 000:058.088 - 0.002ms returns 1
+T520E6740 000:058.094 JLINK_HasError()
+T520E6740 000:058.097 JLINK_CORE_GetFound()
+T520E6740 000:058.099 - 0.001ms returns 0x7FFFFFF
+T520E6740 000:058.105 JLINK_ETM_IsPresent()
+T520E6740 000:060.540 - 2.434ms returns 18:TRUE
+T520E6740 000:060.563 JLINK_ETM_IsPresent()
+T520E6740 000:060.568 - 0.004ms returns 18:TRUE
+T520E6740 000:060.571 JLINK_ETM_ReadReg(RegIndex = 0x01)
+T520E6740 000:060.573    -- Skipped
+T520E6740 000:060.577 - 0.007ms returns 0x20842401
+T520E6740 000:060.589 JLINK_ETB_IsPresent()
+T520E6740 000:060.593 - 0.004ms returns 0:FALSE
+T520E6740 000:060.609 JLINK_Reset()
+T520E6740 000:060.621   JLINK_GetResetTypeDesc
+T520E6740 000:060.624   - 0.003ms 
+T520E6740 000:060.630   Reset type: HALT_WP (https://wiki.segger.com/J-Link_Reset_Strategies)
+T520E6740 000:060.633   _ResetHaltWP: 
+T520E6740 000:085.915   Resetting TRST
+T520E6740 000:110.471 - 49.858ms 
+T520E6740 000:110.543 JLINK_Halt()
+T520E6740 000:110.558 - 0.015ms returns 0x00
+T520E6740 000:110.598 JLINK_ExecCommand("SetVerifyRAMDownload = 1", ...). 
+T520E6740 000:110.619 - 0.005ms returns 0x00
+T520E6740 000:110.632 JLINK_DownloadFile()
+T520E6740 000:110.951   Data:  12 00 00 EA 14 F0 9F E5 14 F0 9F E5 14 F0 9F E5 ...
+T520E6740 000:112.464    -- ReadRemote(4 bytes @ 0xE01FC040)
+T520E6740 000:113.085    -- Need to split memory access
+T520E6740 000:113.123    -- #0: 0x00000000, 0x00000040 bytes
+T520E6740 000:113.137   completely In flash
+T520E6740 000:113.150    -- #1: 0x00000040, 0x000002B3 bytes
+T520E6740 000:113.161   completely In flash
+T520E6740 000:113.177   Data:  0D C0 A0 E1 F8 DF 2D E9 04 B0 4C E2 0D C0 A0 E1 ...
+T520E6740 000:113.195   completely In flash
+T520E6740 000:113.383    -- --------------------------------------
+T520E6740 000:113.424    -- Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T520E6740 000:113.443    -- Start of determining dirty areas in flash cache
+T520E6740 000:113.468    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000000 if necessary
+T520E6740 000:113.670    -- End of determining dirty areas
+T520E6740 000:113.688    -- Start of preparing flash programming
+T520E6740 000:113.704    -- Calculating RAM usage
+T520E6740 000:113.740    -- RAM usage = 4576 Bytes
+T520E6740 000:113.756    -- Preserving CPU registers
+T520E6740 000:113.799    -- Determining CPU clock frequency
+T520E6740 000:123.378    -- Preparing target
+T520E6740 000:124.891    -- Preserving target RAM temporarily used for programming
+T520E6740 000:165.137    -- Preserving additional used target memory
+T520E6740 000:165.984    -- Downloading RAMCode
+T520E6740 000:178.624    -- Preparing RAMCode
+T520E6740 000:183.724    -- CPU frequency = 49536 kHz
+T520E6740 000:183.796    -- End of preparing flash programming
+T520E6740 000:194.240    -- CPU is running at 49536 kHz.
+T520E6740 000:194.285    -- Start of comparing flash
+T520E6740 000:194.295    -- CRC check was estimated as fastest method
+T520E6740 000:198.322    -- Comparing range 0x0000 - 0x1FFF (1 Sector, 8 KB), using multi-block CRC calculation
+T520E6740 000:226.028    -- CRC does not match for sector 0
+T520E6740 000:226.064    -- End of comparing flash
+T520E6740 000:226.072    -- Start of erasing sectors
+T520E6740 000:226.080    -- Erasing range 0x00000000 - 0x00001FFF (  1 Sector, 8 KB)
+T520E6740 000:350.003    -- End of erasing sectors
+T520E6740 000:350.080    -- Start of flash programming
+T520E6740 000:350.128    -- Programming range 0x00000000 - 0x00001FFF (  1 Sector, 8 KB)
+T520E6740 000:431.489   
+  ***** Error: 
+T520E6740 000:431.537   Programming failed @ address 0x00000E00 (Algo4: Sector is not prepared)
+T520E6740 000:431.549    -- End of flash programming
+T520E6740 000:431.560    -- Start of restoring
+T520E6740 000:431.571    -- Restoring RAMCode
+T520E6740 000:435.391    -- Restoring target memory
+T520E6740 000:469.286    -- Restore target
+T520E6740 000:470.120    -- Restoring CPU registers
+T520E6740 000:470.180    -- End of restoring
+T520E6740 000:470.765   Restarting due to program error (possibly skipped erasure of half-way erased sector).
+T520E6740 000:470.794   Skip optimizations disabled for second try.
+T520E6740 000:470.803    -- --------------------------------------
+T520E6740 000:471.416 - 360.781ms returns 0xFFFFFEF6
+T520E6740 000:471.468 JLINK_ExecCommand("SetVerifyRAMDownload = 0", ...). 
+T520E6740 000:471.484 - 0.005ms returns 0x01
+T520E6740 000:471.532 JLINK_SetResetDelay(0)
+T520E6740 000:471.539 - 0.007ms 
+T520E6740 000:471.546 JLINK_Reset()
+T520E6740 000:471.563   JLINK_GetResetTypeDesc
+T520E6740 000:471.570   - 0.007ms 
+T520E6740 000:471.582   Reset type: HALT_WP (https://wiki.segger.com/J-Link_Reset_Strategies)
+T520E6740 000:471.589   _ResetHaltWP: 
+T520E6740 000:495.982   Resetting TRST
+T520E6740 000:518.010 - 46.461ms 
+T520E6740 000:518.130 JLINK_IsOpen()
+T520E6740 000:518.145 - 0.013ms returns 0x01
+T520E6740 000:521.783 JLINK_Close()
+T520E6740 000:532.809 - 11.026ms
+T520E6740 000:532.830   
+T520E6740 000:532.834   Closed
