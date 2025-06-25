@@ -5,12 +5,6 @@
 #include "spi.h"
 #include <string.h>
 
-#define BRICKPI3_GET_MANUFACTURER    0x01
-#define BRICKPI3_GET_NAME            0x02
-#define BRICKPI3_GET_HARDWARE_VERSION 0x03
-#define BRICKPI3_GET_FIRMWARE_VERSION 0x04
-#define BRICKPI3_GET_ID              0x05
-
 void timer_init()
 {
 	T0MR0 = 1200000UL;  //the value to be divided by pclk
@@ -90,6 +84,39 @@ void set_pll(void)
 	VPBDIV = 0;			//PCLK = 1/4 of CCLK
 }
 
+int main(void)
+{
+	volatile unsigned int i = 0;
+	volatile unsigned int j = 0;
+	volatile int a = 4;
+	char buffer[100];
+	set_pll();
+	LOG_init();
+
+	spi_init();
+
+	//sprintf(buffer,"%d testing\n",a);
+	//buffer[strcspn(buffer,"\n")+1] = '\0';
+
+	while(1) {
+		for(i = 0; i<1000000; i++);
+		//send_string("please work :(\n");
+		//send_string(buffer);
+	}
+}
+
+
+
+
+
+/*
+#define BRICKPI3_GET_MANUFACTURER    0x01
+#define BRICKPI3_GET_NAME            0x02
+#define BRICKPI3_GET_HARDWARE_VERSION 0x03
+#define BRICKPI3_GET_FIRMWARE_VERSION 0x04
+#define BRICKPI3_GET_ID              0x05
+ *
+ *
 // Helper functions
 void print_hex(uint8_t val) {
     send_x((val >> 4) < 10 ? '0' + (val >> 4) : 'A' + (val >> 4) - 10);
@@ -175,19 +202,9 @@ uint8_t brickpi3_transaction(uint8_t command, uint8_t* response, uint8_t max_res
     return 0;  // Return 0 for now since we're debugging
 }
 
-int main(void)
-{
-	volatile unsigned int i = 0;
-	volatile unsigned int j = 0;
-	volatile int a = 4;
-	unsigned char b = 'U';
-	set_pll();
-	LOG_init();
-	//IODIR0 |= (1 << 31);
 
-	spi_init();
 
-	// Wait for BrickPi3 to fully boot
+// Wait for BrickPi3 to fully boot
 	send_string("Waiting for BrickPi3 boot...\n");
 	for(volatile int delay = 0; delay < 3000000; delay++);
 
@@ -241,8 +258,4 @@ int main(void)
 
 	send_string("\n=== BrickPi3 Communication Test Complete ===\n");
 
-	while(1) {
-		// Main loop
-		for(volatile int delay = 0; delay < 1000000; delay++);
-	}
-}
+*/
